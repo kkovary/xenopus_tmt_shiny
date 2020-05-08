@@ -9,7 +9,7 @@ Shiny app to explore xenopus single cell TMT data
 ![Alt text](www/step_1.jpeg?raw=true "Title")
 
 ## Step 2
-- Right click on either app.R, ui.R, or global.R and open in RStudio
+- Right click on either app.R, ui.R, or global.R files and open in RStudio
 
 ![Alt text](www/step_2.jpeg?raw=true "Title")
 
