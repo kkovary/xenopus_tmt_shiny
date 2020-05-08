@@ -5,7 +5,10 @@ check.packages <- function(pkg){
   new.pkg <- pkg[!(pkg %in% installed.packages()[, "Package"])]
   
   options(repos=structure(c(CRAN="http://cloud.r-project.org/")))
-  options(repos = BiocManager::repositories(version="3.10"))
+  
+  if("BiocManager" %in% installed.packages()[, "Package"]){
+    options(repos = BiocManager::repositories(version="3.10"))
+  }
   
   if (length(new.pkg)) 
     install.packages(new.pkg, dependencies = TRUE)
@@ -13,8 +16,10 @@ check.packages <- function(pkg){
   sapply(pkg, require, character.only = TRUE)
 }
 
-packages<-c("shiny", "tidyverse", "BiocManager", "DT", "ComplexHeatmap", "shinythemes", "circlize","RColorBrewer","org.Xl.eg.db")
+packages<-c("shiny", "tidyverse", "BiocManager", "DT", "shinythemes", "circlize","RColorBrewer")
+bioc_packages <- c("ComplexHeatmap", "org.Xl.eg.db")
 check.packages(packages)
+check.packages(bioc_packages)
 
 
 ### Data ###
