@@ -18,8 +18,8 @@ check.packages(packages)
 
 
 ### Data ###
-bet_mod_cor2 <- readRDS("bet_mod_cor_2.RDS")
-cor <- readRDS("cor.RDS")
+bet_mod_cor2 <- readRDS("data/bet_mod_cor_2.RDS")
+cor <- readRDS("data/cor.RDS")
 
 ### Functions ###
 mod_cor_heatmap <- function(num, bet_mod_data = bet_mod_cor2){
