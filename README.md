@@ -15,6 +15,6 @@ Shiny app to explore xenopus single cell TMT data
 
 ### Step 3
 - Click the "Run App" button near the top of the RStudio window and the app will run and open in a new window
-- Keep in mind that the first time this app runs it will take a while to download and install of the libraries so please be patient :)
+- Keep in mind that the first time this app runs it will take a while to download and install all of the libraries so please be patient :)
 
 ![Alt text](www/step_3.jpeg?raw=true "Title")
